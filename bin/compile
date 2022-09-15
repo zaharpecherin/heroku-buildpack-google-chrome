@@ -104,14 +104,7 @@ fi
 
 topic "Installing Google Chrome from the $channel channel."
 
-# Detect requested version or default to current
-if [ -f $ENV_DIR/GOOGLE_CHROME_VERSION ]; then
-  version=$(cat $ENV_DIR/GOOGLE_CHROME_VERSION)
-  topic "Download Google Chrome Version – ${version}"
-  PACKAGES="$PACKAGES https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-${channel}_${version}_amd64.deb"
-else
-  PACKAGES="$PACKAGES https://dl.google.com/linux/direct/google-chrome-${channel}_current_amd64.deb"
-fi
+PACKAGES="$PACKAGES https://www.slimjet.com/chrome/download-chrome.php?file=files%2F75.0.3770.80%2Fgoogle-chrome-stable_current_amd64.deb"
 
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
 APT_STATE_DIR="$CACHE_DIR/apt/state"
