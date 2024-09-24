@@ -102,9 +102,9 @@ if [ ! -f $CACHE_DIR/PURGED_CACHE_V1 ]; then
   touch $CACHE_DIR/PURGED_CACHE_V1
 fi
 
-topic "Installing Google Chrome from the $channel channel."
+topic "Installing Google Chrome v128.0.6613.84 from the $channel channel."
 
-PACKAGES="$PACKAGES https://www.slimjet.com/chrome/download-chrome.php?file=files/103.0.5060.53/google-chrome-stable_current_amd64.deb"
+PACKAGES="$PACKAGES https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/google-chrome-stable_128.0.6613.84-1_amd64.deb"
 
 APT_CACHE_DIR="$CACHE_DIR/apt/cache"
 APT_STATE_DIR="$CACHE_DIR/apt/state"
